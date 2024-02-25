@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  mariadb:
+    image: mariadb:10.5
+    restart: always
+    ports: 
+      - "3306:3306"
+    volumes:
+      - mariadb-12factor-data:/var/lib/mysql/
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    environment:
+      - MYSQL_ROOT_PASSWORD=123
+
+volumes:
+  mariadb-12factor-data:
