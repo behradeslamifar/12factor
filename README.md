@@ -1,4 +1,5 @@
 # 12factor
+This code was written with the help of ChatGPT.
 Read [12factor.net](https://12factor.net/) first.
 
 ## How to test the project
